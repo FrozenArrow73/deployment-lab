@@ -1,4 +1,4 @@
-let buttonForm = document.getElementById("form1")
+let buttonForm = document.getElementById("rollbarTest")
 let addForm = document.getElementById("form2")
 let deleteBtn = document.getElementById("clear")
 let input = document.querySelector("input")
@@ -16,8 +16,7 @@ rollbar.log('Hello world!')
 
 
 
-buttonForm.addEventListener("click", (event) => {
-    event.preventDefault()
+buttonForm.addEventListener("click", () => {
     axios.get("http://3.101.89.235/tryCatch").then((result) => {
 
     }).catch((err) => {
