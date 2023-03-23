@@ -16,7 +16,7 @@ rollbar.log('Hello world!')
 
 
 
-buttonForm.addEventListener("submit", (event) => {
+buttonForm.addEventListener("click", (event) => {
     event.preventDefault()
     axios.get("http://3.101.89.235/tryCatch").then((result) => {
 
