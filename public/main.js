@@ -17,6 +17,7 @@ rollbar.log('Hello world!')
 
 
 buttonForm.addEventListener("click", () => {
+    rollbar.info("Roll bar button Clicked")
     axios.get("http://3.101.89.235/tryCatch").then((result) => {
 
     }).catch((err) => {
